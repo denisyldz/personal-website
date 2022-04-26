@@ -1,0 +1,151 @@
+:root {
+  --bg: #1a1e2d;
+  --green: #a5ea9b;
+  --pink: #ff61d8;
+  --blue: #569cfa;
+  --orange: #ffcc81;
+  --cyan: #7ed1e2;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg);
+  display: flex;
+  place-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+}
+.container svg {
+  height: 74%;
+  width: 74%;
+  overflow: visible;
+  margin-left: 27%;
+  margin-top: 70px;
+}
+
+#bongo-cat {
+  fill: var(--bg);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+#bongo-cat .laptop-cover,
+#bongo-cat .headphone .band {
+  fill: none;
+}
+#bongo-cat .paw, #bongo-cat .head {
+  stroke: var(--orange);
+}
+#bongo-cat .laptop-keyboard {
+  stroke-width: 2;
+}
+#bongo-cat .terminal-code {
+  stroke-width: 5;
+}
+#bongo-cat .music .note,
+#bongo-cat .laptop-base,
+#bongo-cat .laptop-cover,
+#bongo-cat .paw .pads {
+  stroke: var(--pink);
+}
+#bongo-cat .table line,
+#bongo-cat .headphone .band,
+#bongo-cat .headphone .speaker path:nth-child(3) {
+  stroke: var(--green);
+}
+#bongo-cat .terminal-frame,
+#bongo-cat .laptop-keyboard,
+#bongo-cat .headphone .speaker path:nth-child(2) {
+  stroke: var(--blue);
+}
+#bongo-cat .terminal-code,
+#bongo-cat .headphone .speaker path:first-child {
+  stroke: var(--cyan);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #18191f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+#instagram,
+#linkedin,
+#github
+{
+  font-size: 50px;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: 30px 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+  margin-left: 100%;
+ 
+}
+.social,.personal {
+  margin-bottom: 15%;
+}
+.personal {
+  
+  color: #fff;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+  font-family: fantasy;
+  font-style: oblique;
+  font-size: 40px;
+  margin-bottom: 24%;
+  margin-left: 16%;
+  letter-spacing: 5px;
+  line-height: 1.6;
+}
+#linkedin {
+  animation-delay: 0.3s;
+}
+
+#github {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes cycle {
+  0% { text-shadow: 0px 0px 100px rgba(11,124,199,0.5);}
+  20% { text-shadow: 0px 0px 100px rgba(168,11,199,0.5);}
+  40% { text-shadow: 0px 0px 100px rgba(11,199,96,0.5);}
+  60% { text-shadow: 0px 0px 100px rgba(199,11,11,0.5);}
+  80% { text-shadow: 0px 0px 100px rgba(199,96,11,0.5);}
+}
+.personal::after {
+  
+    animation: cycle 10s linear infinite;
+}
